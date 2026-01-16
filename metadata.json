@@ -1,0 +1,7 @@
+{
+  "name": "Meow Squared - 喵的二次方",
+  "description": "让爱宠住进艺术。通过魔法绘画技术将您的猫咪照片转化为精美的木雕、陶艺等艺术风格，并支持预约定制实体手作。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

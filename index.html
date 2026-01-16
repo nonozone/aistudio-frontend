@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meow Squared | 喵的二次方 - 艺术化宠物定制</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Noto+Sans+SC:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --color-bg: #FDFCFB;
+        --color-text: #3E3636;
+        --color-accent-blue: #AED9E0;
+        --color-accent-pink: #F8C8D8;
+        --color-border: #EAE0D5;
+      }
+      body {
+        font-family: 'Noto Sans SC', 'Montserrat', sans-serif;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        letter-spacing: 0.01em;
+      }
+      .font-display { font-family: 'Montserrat', sans-serif; }
+      .premium-shadow { box-shadow: 0 10px 40px -10px rgba(62, 54, 54, 0.05); }
+      .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid var(--color-border); }
+      
+      /* 极致精细的滚动条 */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #D2CDC6; border-radius: 3px; }
+
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-12px); }
+        100% { transform: translateY(0px); }
+      }
+      .float-animation { animation: float 6s ease-in-out infinite; }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.36.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "next": "https://esm.sh/next@^16.1.2",
+    "next/": "https://esm.sh/next@^16.1.2/"
+  }
+}
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

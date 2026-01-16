@@ -1,0 +1,47 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #FDFCFB;
+  --color-text: #3E3636;
+  --color-accent-blue: #AED9E0;
+  --color-border: #EAE0D5;
+}
+
+body {
+  font-family: 'Noto Sans SC', 'Montserrat', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+  font-size: 16px; /* 提升基础字号 */
+}
+
+.animate-in {
+  animation-duration: 0.4s; /* 加快动画速度，减少等待感 */
+  animation-fill-mode: both;
+}
+
+@keyframes slide-in-from-bottom {
+  from { transform: translateY(1rem); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-in-from-bottom-8 {
+  animation-name: slide-in-from-bottom;
+}
+
+/* 强化按钮视觉 */
+.btn-primary {
+  @apply bg-[#3E3636] text-white font-bold uppercase tracking-wider transition-all active:scale-95 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply bg-white border-2 border-[#3E3636] text-[#3E3636] font-bold uppercase tracking-wider transition-all active:scale-95;
+}
+
+/* 极简滚动条 */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #D2CDC6; border-radius: 3px; }
